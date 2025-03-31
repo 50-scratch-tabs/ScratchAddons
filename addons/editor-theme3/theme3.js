@@ -1019,19 +1019,8 @@ export default async function ({ addon, console, msg }) {
           return;
         }
         e.stopPropagation();
-      },
-      pen: {
-        blockIconURI: addon.self.getResource(`${iconPath()}/extensions/pen.svg`)
-      },
-      text2speech: {
-        blockIconURI: addon.self.getResource(`${iconPath()}/extensions/text2speech.svg`)
-      },
-      translate: {
-        blockIconURI: addon.self.getResource(`${iconPath()}/extensions/translate.${useBlackIcons() ? 'svg' : 'png'}`)
-      },
-      videoSensing: {
-        blockIconURI: addon.self.getResource(`${iconPath()}/extensions/videoSensing.svg`)
       }
+    );
     };
 
     BLOCKS_MAP[BLOCKS_CUSTOM] = {
