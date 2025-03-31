@@ -5,11 +5,11 @@
 export default async function ({ addon, console }) {
   const vm = addon.tab.traps.vm;
   const updateStageSize = () => {
-    document.documentElement.style.setProperty('--sa-fullscreen-width', vm.runtime.stageWidth);
-    document.documentElement.style.setProperty('--sa-fullscreen-height', vm.runtime.stageHeight);
+    document.documentElement.style.setProperty("--sa-fullscreen-width", vm.runtime.stageWidth);
+    document.documentElement.style.setProperty("--sa-fullscreen-height", vm.runtime.stageHeight);
   };
   updateStageSize();
-  vm.on('STAGE_SIZE_CHANGED', updateStageSize);
+  vm.on("STAGE_SIZE_CHANGED", updateStageSize);
 
   // In Electron, after running requestFullscreen() a resize event can be fired before
   // document.fullscreenElement is updated. We want to ignore that event.
@@ -22,7 +22,8 @@ export default async function ({ addon, console }) {
       // be enabled, and vice versa for disabling.
       if (addon.tab.redux.state.scratchGui.mode.isFullScreen && document.fullscreenElement === null) {
         isEnteringFullscreen = true;
-        document.documentElement.requestFullscreen()
+        document.documentElement
+          .requestFullscreen()
           .then(() => {
             isEnteringFullscreen = false;
           })

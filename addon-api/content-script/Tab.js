@@ -882,7 +882,7 @@ export default class Tab extends Listenable {
   }
 
   // TW - just a stub so that the addons don't break, makes testing easier
-  recolorable () {
-    return document.createElement('img');
+  recolorable() {
+    return document.createElement("img");
   }
 }

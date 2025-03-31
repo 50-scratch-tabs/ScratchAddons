@@ -109,7 +109,7 @@ export default async function ({ addon, console, msg }) {
   compilerWarning.addEventListener("click", () => {
     addon.tab.redux.dispatch({
       type: "scratch-gui/modals/OPEN_MODAL",
-      modal: "settingsModal"
+      modal: "settingsModal",
     });
   });
   compilerWarning.className = "sa-debugger-log sa-debugger-compiler-warning";
@@ -491,12 +491,12 @@ export default async function ({ addon, console, msg }) {
       "list",
       "more",
       "pen",
-      "addon-custom-block"
+      "addon-custom-block",
     ];
     if (COLOR_CLASSES.includes(category)) {
       element.classList.add(`sa-block-color-${category}`);
     } else if (color) {
-      element.style.setProperty('--sa-block-colored-background', color);
+      element.style.setProperty("--sa-block-colored-background", color);
     }
 
     return element;

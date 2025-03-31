@@ -63,7 +63,7 @@ export function loadModules(paper, vm) {
       -ART_BOARD_HEIGHT / 4,
       ART_BOARD_WIDTH * 1.5,
       ART_BOARD_HEIGHT * 1.5
-    );  
+    );
   };
   vm.on("STAGE_SIZE_CHANGED", updateStageSize);
   updateStageSize();
@@ -114,16 +114,16 @@ export function loadModules(paper, vm) {
     },
     layer: { CROSSHAIR_FULL_OPACITY, getDragCrosshairLayer, getLayer: _getLayer },
     view: {
-      get CENTER () {
+      get CENTER() {
         return CENTER;
       },
-      get ART_BOARD_BOUNDS () {
+      get ART_BOARD_BOUNDS() {
         return ART_BOARD_BOUNDS;
       },
-      get MAX_WORKSPACE_BOUNDS () {
+      get MAX_WORKSPACE_BOUNDS() {
         return MAX_WORKSPACE_BOUNDS;
       },
-      getActionBounds
+      getActionBounds,
     },
     guide: { hoverBounds },
   };

@@ -271,7 +271,7 @@ function _renderBlock(block, container, parentCategory, isVertical) {
     "list",
     "more",
     "pen",
-    "addon-custom-block"
+    "addon-custom-block",
   ];
   const categoryClass = COLOR_CLASSES.includes(category.name) ? "sa-block-color-" + category.name : null;
 

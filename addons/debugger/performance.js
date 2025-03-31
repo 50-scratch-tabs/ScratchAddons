@@ -34,7 +34,7 @@ export default async function createPerformanceTab({ debug, addon, console, msg 
   const now = () => performance.now();
 
   // We'll guess that requestAnimationFrame is probably 60, but even if it's not, it's not a big deal.
-  const getMaxFps = () => vm.runtime.frameLoop.framerate === 0 ? 60 : vm.runtime.frameLoop.framerate;
+  const getMaxFps = () => (vm.runtime.frameLoop.framerate === 0 ? 60 : vm.runtime.frameLoop.framerate);
 
   const NUMBER_OF_POINTS = 20;
   // An array like [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]

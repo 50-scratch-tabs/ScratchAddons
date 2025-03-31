@@ -48,7 +48,8 @@ export default async function ({ addon, console, msg }) {
       count.dataset.str = cache[v] || msg("clones", { cloneCount: v });
     }
 
-    if (v === 0 || (addon.tab.editorMode !== "editor" && !showOnProjectPage)) countContainerContainer.style.display = "none";
+    if (v === 0 || (addon.tab.editorMode !== "editor" && !showOnProjectPage))
+      countContainerContainer.style.display = "none";
     else countContainerContainer.style.display = "flex";
   }
 
