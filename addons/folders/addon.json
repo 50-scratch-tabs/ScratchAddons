@@ -29,5 +29,6 @@
   ],
   "versionAdded": "1.11.0",
   "tags": ["editor", "recommended"],
-  "enabledByDefault": true
+  "enabledByDefault": false,
+  "libraries": ["scratch-gui"]
 }

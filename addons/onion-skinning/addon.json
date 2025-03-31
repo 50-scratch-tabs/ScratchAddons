@@ -107,5 +107,6 @@
   "tags": ["editor", "costumeEditor", "recommended"],
   "dynamicEnable": true,
   "dynamicDisable": true,
-  "enabledByDefault": true
+  "enabledByDefault": false,
+  "libraries": ["scratch-paint"]
 }

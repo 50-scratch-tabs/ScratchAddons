@@ -98,7 +98,7 @@
       "default": false
     },
     {
-      "type": "positive_integer",
+      "type": "integer",
       "id": "threshold",
       "name": "Snapping distance",
       "default": 10,
@@ -107,5 +107,6 @@
     }
   ],
   "dynamicDisable": true,
-  "dynamicEnable": true
+  "dynamicEnable": true,
+  "libraries": ["scratch-paint"]
 }
