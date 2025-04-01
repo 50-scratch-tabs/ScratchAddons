@@ -1065,5 +1065,4 @@ export default async function ({ addon, console, msg }) {
     colorModeSubmenu.classList.add("sa-colormode-submenu");
     colorModeSubmenu.appendChild(managedBySa);
     colorModeSubmenu.appendChild(addonSettingsLink);
-  }
 }
